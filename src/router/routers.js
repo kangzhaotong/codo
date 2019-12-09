@@ -890,30 +890,6 @@ export const routes = [{
         }]
     },
     {
-        path: '/doc',
-        name: 'doc',
-        meta: {
-            title: '官方文档',
-            href: 'http://docs.opendevops.cn/zh/latest/',
-            icon: 'ios-book'
-        }
-    },
-    {
-        path: '/join',
-        name: 'join',
-        component: Main,
-        children: [{
-            path: 'join_page',
-            name: 'join_page',
-            meta: {
-                icon: '_qq',
-                title: 'QQ交流群'
-            },
-            component: () =>
-                import ('@/view/join-page.vue')
-        }]
-    },
-    {
         path: '/403',
         name: 'error_403',
         meta: {
